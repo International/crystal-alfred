@@ -25,6 +25,8 @@ response = Alfred::Response.new
 response << Alfred::Item.new("title", "subtitle", "arg", Alfred::Icon.new("icon","icon.png"))
 
 puts response.to_json
+# {"items":[{"title":"title","subtitle":"subtitle","arg":"arg","icon":{"type":"icon","path":"icon.png"}}]}
+
 ```
 
 When using `Alfred::Item`, probably the parameter you'll most likely be interested in is `arg`.
