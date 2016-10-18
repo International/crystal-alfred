@@ -1,4 +1,4 @@
-# crystal-alfred
+# alfred
 
 Utility lib to create items in JSON format for Alfred
 
@@ -9,7 +9,7 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  crystal-alfred:
+  alfred:
     github: International/crystal-alfred
 ```
 
@@ -19,7 +19,7 @@ dependencies:
 At this moment, the only supported format is JSON.
 
 ```crystal
-require "crystal-alfred"
+require "alfred"
 
 response = Alfred::Response.new
 response << Alfred::Item.new("title", "subtitle", "arg", Alfred::Icon.new("icon","icon.png"))
